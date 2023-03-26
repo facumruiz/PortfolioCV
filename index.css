@@ -1,3 +1,10 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 /* Center the loader */
 #loader {
   position: absolute;
@@ -74,11 +81,27 @@
   to {transform: translateX(0px);}
 }
 
-.wordnavr {
-  -webkit-animation: movingnavr 1s;
-  animation: movingnavr 1s;
+.wordnavritem1 {
+  -webkit-animation: wordnavritem1 1s;
+  animation: wordnavritem1 0.5s;
 }
-@keyframes movingnavr {
+@keyframes wordnavritem1 {
+  from {transform: translateX(200px);}
+  to {transform: translateX(0px);}
+}
+.wordnavritem2 {
+  -webkit-animation: wordnavritem2 1s;
+  animation: wordnavritem2 0.7s;
+}
+@keyframes wordnavritem2 {
+  from {transform: translateX(200px);}
+  to {transform: translateX(0px);}
+}
+.wordnavritem3 {
+  -webkit-animation: wordnavritem3 1s;
+  animation: wordnavritem3 0.9s;
+}
+@keyframes wordnavritem3 {
   from {transform: translateX(200px);}
   to {transform: translateX(0px);}
 }

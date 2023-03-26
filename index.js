@@ -10,3 +10,5 @@ function idioma(){
         location.href="index.html"
     }
 }
+
+
