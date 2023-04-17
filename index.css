@@ -2,7 +2,8 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  position: relative
+  position: relative;
+  font-family: 'Ubuntu'
 }
 
 /* Center the loader */
@@ -22,7 +23,7 @@ body {
 }
 
 .imgProfile{
-  width: 20%;
+  width: 50%;
 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -124,56 +125,25 @@ body {
   to {transform: translateX(0px);}
 }
 
-@media (max-width: 375px) {
-  .imgProfile{
-      width: 50%;
-
-  }
-}
-
-@media (max-width: 500px) {
-  .imgProfile{
-      width: 50%;
-
-  }
-}
-
-.navbarName{
-  padding-left: 100px;
-
-}
-
-@media (max-width: 375px) {
-  .navbarName{
-    padding-left: 0px;
-
-  }
-}
-
-@media (max-width: 412px) {
-  .navbarName{
-    padding-left: 0px;
-
-  }
-}
-
-@media (max-width: 810px) {
-  .navbarName{
-    padding-left: 0px;
-
-  }
-}
-
 
 .bandera{
-  width: 20px;
+  width: 30px;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 900px) {
   .bandera{
     width: 20px;
 
   }
+  .imgProfile{
+    width: 50%;
+    text-align: center !important;
+
+}
+.display-4{
+  font-size: 60px !important;
+  text-align: center !important;
+}
 }
 
 .magicWords1 {
@@ -185,6 +155,7 @@ body {
   content: "...";
   animation: topToBottom1 5s infinite 0s;
 }
+
 
 @keyframes topToBottom1 {
   25% {
