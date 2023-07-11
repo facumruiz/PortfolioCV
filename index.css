@@ -3,7 +3,8 @@ html, body {
 }
 body {
   position: relative;
-  font-family: 'Ubuntu'
+  font-family: 'Ubuntu';
+  background-color: rgb(145, 145, 145);
 }
 
 /* Center the loader */
@@ -148,7 +149,7 @@ body {
 
 .magicWords1 {
 
-  color:gray;
+  color:white;
 }
 
 .magicWords1:before {
@@ -174,7 +175,7 @@ body {
 }
 .random {
 
-  color:gray;
+  color:white;
 }
 
 .random:before {
@@ -200,4 +201,33 @@ body {
 
 a{
   color: gray;
+}
+
+.titleabout{
+  background-color: #212529;
+}
+.titleprojects{
+  background-color: #212529;
+}
+.titlecertificates{
+  background-color: #212529;
+}
+
+.navbarName{
+  color:white;
+}
+.navbar{
+  background-color: #212529;
+}
+
+a:hover{
+  color: #64696e;
+}
+.display-4:hover{
+  color: rgb(194, 194, 194);
+
+}
+
+.boton:hover{
+  color: #64696e; 
 }
