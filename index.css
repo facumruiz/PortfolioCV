@@ -231,3 +231,31 @@ a:hover{
 .boton:hover{
   color: #64696e; 
 }
+
+.imghobbie{
+  transition: width 0.3s 
+
+}
+.imghobbie:hover{
+  width: 70%;
+}
+
+.list-group-item{
+  font-size: 1em;
+  transition: font-size .5s ease;
+
+}
+.list-group-item:hover{
+  font-size: 1.5em;
+}
+
+tr{
+  font-size: 1em;
+  transition: font-size .5s ease;
+  transition: background-color .5s ease;
+}
+
+tr:hover{
+  font-size: 1.2em;
+  background-color: #bdbfc0;
+}
