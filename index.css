@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
+
 body {
   position: relative;
   font-family: 'Ubuntu';
@@ -23,14 +25,14 @@ body {
   animation: spin 2s linear infinite;
 }
 
-.imgProfile{
+.imgProfile {
   width: 50%;
 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
-.floating { 
+.floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -40,19 +42,37 @@ body {
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
@@ -66,90 +86,158 @@ body {
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 
 
-.fade-in { animation: fadeIn 4s; }
+.fade-in {
+  animation: fadeIn 4s;
+}
+
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .word {
   -webkit-animation: moving 1s;
   animation: moving 1s;
 }
+
 @keyframes moving {
-  from {transform: translateY(200px);}
-  to {transform: translateY(0px);}
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
 }
 
 .wordnavl {
   -webkit-animation: movingnavl 1s;
   animation: movingnavl 1s;
 }
+
 @keyframes movingnavl {
-  from {transform: translateX(-200px);}
-  to {transform: translateX(0px);}
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
 
 .wordnavritem1 {
   -webkit-animation: wordnavritem1 1s;
   animation: wordnavritem1 0.5s;
 }
+
 @keyframes wordnavritem1 {
-  from {transform: translateX(200px);}
-  to {transform: translateX(0px);}
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
+
 .wordnavritem2 {
   -webkit-animation: wordnavritem2 1s;
   animation: wordnavritem2 0.7s;
 }
+
 @keyframes wordnavritem2 {
-  from {transform: translateX(200px);}
-  to {transform: translateX(0px);}
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
+
 .wordnavritem3 {
   -webkit-animation: wordnavritem3 1s;
   animation: wordnavritem3 0.9s;
 }
+
 @keyframes wordnavritem3 {
-  from {transform: translateX(200px);}
-  to {transform: translateX(0px);}
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
 
 
-.bandera{
+.bandera {
   width: 30px;
 }
 
 @media (max-width: 900px) {
-  .bandera{
+  .bandera {
     width: 20px;
 
   }
-  .imgProfile{
+
+  .imgProfile {
     width: 50%;
     text-align: center !important;
 
-}
-.display-4{
-  font-size: 60px !important;
-  text-align: center !important;
-}
+  }
+
+  .display-4 {
+    font-size: 60px !important;
+    text-align: center !important;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .imghobbie {
+    width: 20%;
+  }
+
+  .btn1 {
+    width: 70%;
+  }
 }
 
 .magicWords1 {
 
-  color:white;
+  color: white;
 }
 
 .magicWords1:before {
@@ -162,20 +250,24 @@ body {
   25% {
     content: "life.";
   }
+
   50% {
     content: "work.";
   }
+
   75% {
     content: "passion.";
   }
+
   100% {
     content: "portfolio.";
   }
 
 }
+
 .random {
 
-  color:white;
+  color: white;
 }
 
 .random:before {
@@ -187,75 +279,136 @@ body {
   25% {
     content: "my projects.";
   }
+
   50% {
     content: "your projects.";
   }
+
   75% {
     content: "our projects.";
   }
+
   100% {
     content: "our future.";
   }
 
 }
 
-a{
+a {
   color: gray;
 }
 
-.titleabout{
-  background-color: #212529;
-}
-.titleprojects{
-  background-color: #212529;
-}
-.titlecertificates{
+.titleabout {
   background-color: #212529;
 }
 
-.navbarName{
-  color:white;
-}
-.navbar{
+.titleprojects {
   background-color: #212529;
 }
 
-a:hover{
+.titlecertificates {
+  background-color: #212529;
+}
+
+.navbarName {
+  color: white;
+}
+
+.navbar {
+  background-color: #212529;
+}
+
+a:hover {
   color: #64696e;
 }
-.display-4:hover{
+
+.display-4:hover {
   color: rgb(194, 194, 194);
 
 }
 
-.boton:hover{
-  color: #64696e; 
+.boton:hover {
+  color: #64696e;
 }
 
-.imghobbie{
-  transition: width 0.3s 
-
+.imghobbie {
+  transition: width 0.3s
 }
-.imghobbie:hover{
+
+.imghobbie:hover {
   width: 70%;
 }
 
-.list-group-item{
+.list-group-item {
   font-size: 1em;
   transition: font-size .5s ease;
 
 }
-.list-group-item:hover{
+
+.list-group-item:hover {
   font-size: 1.5em;
 }
 
-tr{
+tr {
   font-size: 1em;
   transition: font-size .5s ease;
   transition: background-color .5s ease;
 }
 
-tr:hover{
+tr:hover {
   font-size: 1.2em;
   background-color: #bdbfc0;
+}
+
+.float {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  right: 10px;
+  background: #FFF;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.btn {
+  color: #212529;
+}
+
+.btn:hover {
+  color: #64696e;
+}
+
+.btn:focus,
+.btn:active {
+  color: #212529;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.popover {
+  background-color: #212529;
+}
+
+.popover-body {
+  color: #ffffff;
+}
+
+
+.card {
+  background-color: #212529;
+  color: #64696e;
+
+}
+
+.top {
+  background-color: #212529;
 }
