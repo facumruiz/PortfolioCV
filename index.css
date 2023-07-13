@@ -242,26 +242,24 @@ body {
 }
 
 .random:before {
-  content: "...";
+  content: "my projects.";
   animation: topToBottom2 5s infinite 0s;
 }
 
 @keyframes topToBottom2 {
   25% {
-    content: "my projects.";
-  }
-
-  50% {
     content: "your projects.";
   }
 
-  75% {
+  50% {
     content: "our projects.";
   }
 
-  100% {
+  75% {
     content: "our future.";
   }
+
+
 
 }
 
@@ -436,7 +434,7 @@ tr:hover {
 
   }
   .text1{
-    font-size: 20px !important;
+    font-size: 19px !important;
   }
   
 
