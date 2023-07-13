@@ -314,10 +314,11 @@ a:hover {
 
 }
 
+/*
 .list-group-item:hover {
   font-size: 1.5em;
 }
-
+*/
 tr {
   font-size: 1em;
   transition: font-size .5s ease;
