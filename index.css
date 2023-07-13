@@ -233,6 +233,12 @@ body {
   .btn1 {
     width: 70%;
   }
+  .botones{
+    display: none;
+  }
+  .imghobbie:hover {
+    width: 30% !important;
+  }
 }
 
 .magicWords1 {
