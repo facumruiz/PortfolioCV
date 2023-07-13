@@ -34,16 +34,16 @@
       <!-- Navbar Items  -->
 
 
-            <a class="nav-link" href="https://www.linkedin.com/in/facumruiz/">Linkedin</a>
+      <a class="nav-link" href="https://www.linkedin.com/in/facumruiz/">Linkedin</a>
 
-            <a class="nav-link" href="https://github.com/facumruiz" >GitHub</a>
+      <a class="nav-link" href="https://github.com/facumruiz">GitHub</a>
 
 
-            <a class="nav-link" href="mailto:facundoruiz105@gmail.com">Mail</a>
+      <a class="nav-link" href="mailto:facundoruiz105@gmail.com">Mail</a>
 
-       
 
-      
+
+
     </div>
   </nav>
 
@@ -55,28 +55,7 @@
   </a>
 
   </div>
-    <!-- NavBar -->
-    <nav class="navbar cvphone navbar-expand-lg fixed-top">
-      <div class="container-fluid ">
-        <!-- Navbar Items  -->
-  
-  <div class="mx-auto">
-    <a class="nav-link  wordnavritem1" href="./CV-Ruiz Perez Facundo (ES).pdf" style="font-size:55% ;margin-top: -10px;">CV -
-      Spanish<span class="sr-only"></span></a>
-    </div>
-    <div class="mx-auto">
-      <a class="nav-link  wordnavritem1" href="./CV-Ruiz Perez Facundo (EN).pdf" style="font-size:55%; margin-top: -10px;">CV -
-        English<span class="sr-only"></span></a>
-    </div>
 
-
-
-  
-         
-  
-        
-      </div>
-    </nav>
   <div class="fade-in">
     <!-- NavBar -->
     <nav class="navbar top navbar-expand-lg fixed-top" style="  height: 25px;">
@@ -119,7 +98,40 @@
         </ul>
       </div>
     </nav><!-- End NavBar -->
+    <!-- NavBar -->
+    <nav class="navbar cvphonescroll1 cvphonescroll2 cvphone navbar-expand-lg " id="mynav">
+      <div class="container-fluid ">
+        <!-- Navbar Items  -->
 
+        <div class="mx-auto">
+          <a class="nav-link  wordnavritem1" href="./CV-Ruiz Perez Facundo (ES).pdf"
+            style="font-size:55% ;margin-top: -10px;">CV -
+            Spanish<span class="sr-only"></span></a>
+        </div>
+        <div class="mx-auto">
+          <a class="nav-link  wordnavritem1" href="./CV-Ruiz Perez Facundo (EN).pdf"
+            style="font-size:55%; margin-top: -10px;">CV -
+            English<span class="sr-only"></span></a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+
+
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        //>=, not <=
+        if (scroll >= 80) {
+          //clearHeader, not clearheader - caps H
+          $(".cvphone").addClass("fixed-top");
+        } else {
+          $(".cvphone").removeClass("fixed-top");
+        }
+      }); //missing );
+
+    </script>
 
 
     <!-- Banner -->
@@ -702,13 +714,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-
-
-
-
-
-
 </body>
 
 </html>
