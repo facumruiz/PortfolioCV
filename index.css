@@ -205,41 +205,6 @@ body {
   width: 30px;
 }
 
-@media (max-width: 900px) {
-  .bandera {
-    width: 20px;
-
-  }
-
-  .imgProfile {
-    width: 50%;
-    text-align: center !important;
-
-  }
-
-  .display-4 {
-    font-size: 60px !important;
-    text-align: center !important;
-  }
-
-  .top {
-    display: none;
-  }
-
-  .imghobbie {
-    width: 20%;
-  }
-
-  .btn1 {
-    width: 70%;
-  }
-  .botones{
-    display: none;
-  }
-  .imghobbie:hover {
-    width: 30% !important;
-  }
-}
 
 .magicWords1 {
 
@@ -417,4 +382,51 @@ tr:hover {
 
 .top {
   background-color: #212529;
+}
+
+.navbar-ph{
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .bandera {
+    width: 20px;
+
+  }
+
+  .imgProfile {
+    width: 50%;
+    text-align: center !important;
+
+  }
+
+  .display-4 {
+    font-size: 60px !important;
+    text-align: center !important;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .imghobbie {
+    width: 20%;
+  }
+
+  .btn1 {
+    width: 70%;
+  }
+  .botones{
+    display: none;
+  }
+  .imghobbie:hover {
+    width: 30% !important;
+  }
+  .navbar-ph{
+    display: block;
+    
+  }
+  
+
+
 }
