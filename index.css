@@ -300,13 +300,7 @@ a:hover {
   color: #64696e;
 }
 
-.imghobbie {
-  transition: width 0.3s
-}
 
-.imghobbie:hover {
-  width: 70%;
-}
 
 .list-group-item {
   font-size: 1em;
@@ -404,6 +398,9 @@ tr:hover {
  .carousel-control-next-icon {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%212529' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
  }
+ .imgpcelu{
+  display: none;
+ }
 
 @media (max-width: 900px) {
   .bandera {
@@ -413,10 +410,23 @@ tr:hover {
 
   .imgProfile {
     width: 50%;
-    text-align: center !important;
 
   }
+  .imgpcelu{
+    display: block;
+    padding-bottom: 10%;
+    
+      }
+  .imgpdesktop{
+display: none;
 
+  }
+.intro{
+  padding: 5%;
+}
+em{
+  padding: 5%;
+}
   .display-4 {
     font-size: 60px !important;
     text-align: center !important;
