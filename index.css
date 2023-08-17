@@ -6,7 +6,7 @@ body {
 body {
   position: relative;
   font-family: 'Ubuntu';
-  background-color: rgb(165, 165, 165);
+  background-color: rgb(119, 119, 119);
 }
 
 /* Center the loader */
@@ -321,7 +321,7 @@ tr {
 
 tr:hover {
   font-size: 1em;
-  background-color: #bdbfc0;
+  background-color:#21252930;
 }
 
 .float {
@@ -425,6 +425,7 @@ display: none;
   padding: 5%;
 }
 em{
+
   padding: 5%;
 }
   .display-4 {
@@ -462,7 +463,6 @@ em{
     
   }
 
-  
 
 
 }
