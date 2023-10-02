@@ -4,6 +4,8 @@ const formEvent = form.addEventListener("submit", (event) => {
   event.preventDefault();
   let mail = new FormData(form);
   sendMail(mail);
+  alert("email sent successfully")
+  form.reset()
 });
 
 const sendMail = (mail) => {
