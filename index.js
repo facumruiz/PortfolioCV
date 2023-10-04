@@ -12,6 +12,10 @@ const formEvent = form.addEventListener("submit", (event) => {
     sendMail(mail);
     //alert("email sent successfully")
     document.getElementById("errorCaptcha").innerHTML="✅Email sent successfully. thks😉";
+    setTimeout(function(){
+      document.getElementById("errorCaptcha").innerHTML="";
+  }, 5000);
+
     form.reset()
 
   }
