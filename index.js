@@ -14,9 +14,10 @@ const formEvent = form.addEventListener("submit", (event) => {
     document.getElementById("errorCaptcha").innerHTML="✅Email sent successfully. thks😉";
     setTimeout(function(){
       document.getElementById("errorCaptcha").innerHTML="";
+      grecaptcha.reset()
+      form.reset()
   }, 5000);
 
-    form.reset()
 
   }
 
