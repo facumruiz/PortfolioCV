@@ -308,6 +308,9 @@ a:hover {
 
 }
 
+video::-webkit-media-controls {
+  display: none;
+}
 /*
 .list-group-item:hover {
   font-size: 1.5em;
