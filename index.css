@@ -1,7 +1,12 @@
-html,
-body {
-  overflow-x: hidden;
+html, body { 
+  scroll-behavior: smooth
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 body {
   position: relative;
