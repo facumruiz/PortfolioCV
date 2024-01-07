@@ -1,3 +1,15 @@
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  //>=, not <=
+  if (scroll >= 80) {
+    //clearHeader, not clearheader - caps H
+    $(".cvphone").addClass("fixed-top");
+  } else {
+    $(".cvphone").removeClass("fixed-top");
+  }
+}); //missing );
+
 const form = document.getElementById("contact-form");
 
 const formEvent = form.addEventListener("submit", (event) => {
@@ -16,7 +28,7 @@ const formEvent = form.addEventListener("submit", (event) => {
       document.getElementById("errorCaptcha").innerHTML="";
       grecaptcha.reset()
       form.reset()
-  }, 5000);
+  }, 3000);
 
 
   }
