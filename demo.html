@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .portfolio-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .portfolio-card {
+            margin-bottom: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .portfolio-card img {
+            object-fit: cover;
+            height: 150px;
+            width: 100%;
+        }
+
+        .profile-card {
+            margin-bottom: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin-left: 10px;
+            color: #007bff;
+            font-size: 20px;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form .btn {
+            width: 100%;
+        }
+
+        /* Estilo para ajustar el tamaño del texto en dispositivos móviles */
+        @media only screen and (max-device-width: 640px){
+            .card-title {
+                font-size: 1.2rem;
+                /* Tamaño más pequeño para títulos en móviles */
+            }
+
+            .card-text {
+                font-size: 0.8rem;
+                /* Tamaño más pequeño para textos en móviles */
+            }
+
+            .portfolio-card img{
+                width: 110% ;
+            }
+
+            .project-desc {
+                margin-left: 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <div class="card">
+                <h5 class="card-header text-center">Facundo Ruiz - Portfolio</h5>
+                <div class="card-body">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/facundoruizperez" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/facundoruizperez" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/facundoruizperez" target="_blank" title="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/facundoruizperez" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card portfolio-card">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 1">
+                </div>
+                <div class="col-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A brief description of Project 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card portfolio-card">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 2">
+                </div>
+                <div class="col-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A brief description of Project 2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card portfolio-card">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 3">
+                </div>
+                <div class="col-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">A brief description of Project 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <div class="card">
+                <h5 class="card-header text-center">Contact Me</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
