@@ -7,12 +7,18 @@
     <title>Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
     <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <style>
         html,
         body {
             height: 100%;
+     
         }
 
         .portfolio-container {
@@ -35,11 +41,18 @@
             width: 100%;
         }
 
+        .portfolio-card hover:card {
+            background-color: black;
+
+        }
+
         .profile-card {
             margin-bottom: 20px;
-            max-width: 500px;
+            max-width: 600px;
             width: 100%;
         }
+
+
 
         .profile-img {
             border-radius: 50%;
@@ -77,8 +90,10 @@
         }
 
         .contact-form {
-            max-width: 500px;
+            margin-bottom: 20px;
+            max-width: 600px;
             width: 100%;
+            ;
         }
 
         .contact-form .form-group {
@@ -89,8 +104,18 @@
             width: 100%;
         }
 
+        .expand {
+            position: absolute;
+            top: 45%;
+            left: 30%;
+        }
+
+        .mobile {
+            display: none;
+        }
+
         /* Estilo para ajustar el tamaño del texto en dispositivos móviles */
-        @media only screen and (max-device-width: 640px){
+        @media only screen and (max-device-width: 640px) {
             .card-title {
                 font-size: 1.2rem;
                 /* Tamaño más pequeño para títulos en móviles */
@@ -101,12 +126,20 @@
                 /* Tamaño más pequeño para textos en móviles */
             }
 
-            .portfolio-card img{
-                width: 110% ;
+            .portfolio-card img {
+                width: 110%;
             }
 
             .project-desc {
                 margin-left: 5%;
+            }
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
             }
         }
     </style>
@@ -117,74 +150,118 @@
         <!-- Profile Card -->
         <div class="profile-card">
             <div class="card">
-                <h5 class="card-header text-center">Facundo Ruiz - Portfolio</h5>
+                <h5 class="card-header">Facundo Ruiz</h5>
+
+
                 <div class="card-body">
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-                <div class="card-footer text-center">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/facundoruizperez" target="_blank" title="LinkedIn"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/facundoruizperez" target="_blank" title="GitHub"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/facundoruizperez" target="_blank" title="Twitter"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/facundoruizperez" target="_blank" title="Facebook"><i
-                                class="fab fa-facebook-f"></i></a>
+
+                <div class="desktop">
+                    <!-- Card 1 -->
+                    <div class="card portfolio-card mx-auto">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 1">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body project-desc">
+                                    <h5 class="card-title">Project 1</h5>
+                                    <p class="card-text">A brief description of Project 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card portfolio-card mx-auto">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 2">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body project-desc">
+                                    <h5 class="card-title">Project 2</h5>
+                                    <p class="card-text">A brief description of Project 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card portfolio-card mx-auto">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 3">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body project-desc">
+                                    <h5 class="card-title">Project 3</h5>
+                                    <p class="card-text">A brief description of Project 3.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Card 1 -->
-        <div class="card portfolio-card">
-            <div class="row no-gutters">
-                <div class="col-4">
-                    <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 1">
-                </div>
-                <div class="col-8">
-                    <div class="card-body project-desc">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">A brief description of Project 1</p>
+
+            </div>
+    
+
+
+            <div class="mobile pt-5">
+                <!-- Card 1 -->
+                <div class="card portfolio-card mx-auto">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 1">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body project-desc">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">A brief description of Project 1</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="card portfolio-card">
-            <div class="row no-gutters">
-                <div class="col-4">
-                    <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 2">
-                </div>
-                <div class="col-8">
-                    <div class="card-body project-desc">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">A brief description of Project 2.</p>
+                <!-- Card 2 -->
+                <div class="card portfolio-card mx-auto">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 2">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body project-desc">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">A brief description of Project 2.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="card portfolio-card">
-            <div class="row no-gutters">
-                <div class="col-4">
-                    <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 3">
-                </div>
-                <div class="col-8">
-                    <div class="card-body project-desc">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">A brief description of Project 3.</p>
+                <!-- Card 3 -->
+                <div class="card portfolio-card mx-auto">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="https://via.placeholder.com/300x150" class="card-img" alt="Project 3">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body project-desc">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">A brief description of Project 3.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form">
+         <!-- Contact Form -->
+         <div class="contact-form mx-auto">
             <div class="card">
-                <h5 class="card-header text-center">Contact Me</h5>
+                <h5 class="card-header">Contact Me</h5>
                 <div class="card-body">
                     <form>
                         <div class="form-group">
@@ -197,11 +274,18 @@
                             <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
                                 required></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LeScW8oAAAAAFdZCghCjwlzNxcGpyF5gV9oCoGt">
+                        </div>
+                        <div>
+                            <small style="color: white;" id="errorCaptcha"></small>
+                        </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <!-- Optional JavaScript -->
